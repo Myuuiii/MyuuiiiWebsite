@@ -22,4 +22,4 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-app.Run("http://localhost:5021");
+app.Run("http://0.0.0.0:5021");
