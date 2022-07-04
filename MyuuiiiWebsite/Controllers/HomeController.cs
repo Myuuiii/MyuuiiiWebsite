@@ -25,7 +25,7 @@ public class HomeController : Controller
 		return View();
 	}
 
-	[Route("fumo")]
+	[Route("fumo"), Route("ᗜˬᗜ")]
 	public IActionResult Fumo()
 	{
 		return View();
