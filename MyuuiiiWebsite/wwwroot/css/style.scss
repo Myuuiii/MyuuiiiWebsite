@@ -10,7 +10,7 @@ body {
 
 /* Create a splash class which is located in the exact middle of the page */
 .splash {
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -22,7 +22,7 @@ body {
 	align-items: center;
 
 	& h1 {
-		font-size: 7vw;
+		font-size: 7rem;
 		color: $foreground;
 		font-family: "Pasajero";
 		font-weight: 300;
@@ -106,5 +106,24 @@ body {
 				width: 7rem;
 			}
 		}
+	}
+}
+
+.blackWhiteButton {
+	transition: 250ms;
+	background-color: #111111;
+	color: white;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 1.5vw;
+	font-family: "Pasajero";
+	font-weight: 300;
+	text-decoration: none;
+
+	&:hover {
+		background-color: white;
+		color: #111111;
+		border: 1px solid #111111;
 	}
 }
