@@ -2,7 +2,32 @@
 	ViewData["Title"] = "FUMOFUMOFUMO";
 }
 
-<div class="splash fadeIn">
+<div id="7hoursleft" class="splash fadeIn">
 	<h1>ᗜˬᗜ</h1>
 	<p>You think you're safe?</p>
 </div>
+
+<audio id="fumo" autoplay>
+	<source src="~/fumo.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+	// make the 7hoursleft div randomly lower and raise its opacity the entire time
+	var sevenHoursLeft = document.getElementById("7hoursleft");
+	var sevenHoursLeftOpacity = 0;
+	var sevenHoursLeftOpacityIncrement = 0.01;
+	var sevenHoursLeftOpacityIncrementDirection = 1;
+	var sevenHoursLeftLowerInterval = setInterval(function() {
+		sevenHoursLeft.style.opacity = (Math.random() * 100).toString() + "%";
+	}, 10);
+	var sevenHoursLeftLowerInterval = setInterval(function() {
+		sevenHoursLeft.style.top = (Math.random() * 100).toString() + "%";
+	}, 80);
+</script>
+
+<style>
+	body {
+		overflow-y: hidden; /* Hide vertical scrollbar */
+	}
+</style>
